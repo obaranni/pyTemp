@@ -1,0 +1,48 @@
+<link rel="shortcut icon" type="image/x-icon" href="../static/images/slonik.icon" />
+<style>
+table {
+	    font-family: arial, sans-serif;
+		        border-collapse: collapse;
+				    width: 100%;
+}
+
+td, th {
+	    border: 1px solid #dddddd;
+		        text-align: left;
+				    padding: 8px;
+}
+
+tr:nth-child(even) {
+	    background-color: #dddddd;
+}
+</style>
+
+<meta charset="UTF-8">
+<title>Slonik All</title>
+		    
+<table id="employees" style="width:100%">
+	<tbody>
+		<tr>
+			<th>#</th>
+			<th>Temp</th>
+			<th>Humidity</th>
+			<th>Date</th>
+		</tr>
+		
+		
+		
+		{% if result %}
+		{% for item in result %}
+
+			<tr>
+				<td> {{ item.id }}</td>
+				<td> {{ item.temp }}</td>
+				<td> {{ item.humidity }}</td>
+				<td> {{ item.date }}</td>
+			</tr>
+		{% endfor %}
+		{% endif %}
+				
+				
+	</tbody>
+</table>

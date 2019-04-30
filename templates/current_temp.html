@@ -1,0 +1,23 @@
+<title>Slonik Today</title>
+<link rel="shortcut icon" type="image/x-icon" href="../static/images/slonik.icon" />
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<style type="text/css">
+/* indie-flower-regular - latin */
+p { 
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	font-size: 32px;
+}
+span {
+	font-size: 42px;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+<p> Temperature: <span>{{ result[0].temp }}</span> ^C </p>
+<p> Humidity: <span>{{ result[0].humidity }}</span> % </p>
+<p> Date: <span>{{ result[0].date }}</span> </p>
+<img src="../static/images/slonik.jpg" alt="Slonik" width="80%">
